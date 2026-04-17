@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Add Student Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <h2>Add Student</h2>
+            <p>
+                Enter student details.
+            </p>
+            <form action="AddStudentServlet.do" method="POST">
+                <table>
+                    <tr>
+                        <td>StudentNo</td>
+                        <td>
+                            <input type="text" name="studentNo" required=""/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td>
+                            <input type="text" name="name" required=""/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Surname</td>
+                        <td>
+                            <input type="text" name="surname" required=""/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CellNo</td>
+                        <td>
+                            <input type="text" name="cellNo" required=""/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>
+                            <input type="text" name="email" required=""/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            <select name="gender">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="ADD STUDENT"/>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
